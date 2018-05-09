@@ -15,6 +15,7 @@ cargada:boolean = false;
     }
 
     public cargarProyecto( id: string ) {
-      return this.http.get(`https://ng-portafolio.firebaseio.com/ngx-portfolio:/proyectos/${ id }.json` );
+        return this.http.get(`https://ng-portafolio.firebaseio.com/ngx-portfolio:/proyectos/${ id }.json`);
+    }
 
 }
