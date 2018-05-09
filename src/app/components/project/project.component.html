@@ -3,9 +3,9 @@
 
   <div class="left-column-portfolio animated fadeIn">
     <div class="left-column-portfolio-copy">
-      <h1>{{ _tws.info.tuituloProyecto1 }}</h1>
-      <p>{{ _tws.info.copyProyecto1 }}</p>
-      <a href="#" class="blue-button w-arrow">{{ _tws.info.worksBoton }}</a>
+      <h1>{{ proyecto.tuituloProyecto }} {{ proyecto.id }}</h1>
+      <p>{{ proyecto.copyProyecto }}</p>
+      <a href="#" class="blue-button w-arrow">{{ proyecto.worksBoton }}</a>
       <div class="divider"></div>
     </div>
   </div>
@@ -24,13 +24,13 @@
           <div class="slider">
             <carousel>
               <slide>
-                <img [src]="_tws.info.imagen1carruselProyecto1" alt="first slide" style="display: block; width: 100%;">
+                <img [src]="proyecto.imagen1carruselProyecto" alt="first slide" style="display: block; width: 100%;">
               </slide>
               <slide>
-                <img [src]="_tws.info.imagen2carruselProyecto1" alt="second slide" style="display: block; width: 100%;">
+                <img [src]="proyecto.imagen2carruselProyecto" alt="second slide" style="display: block; width: 100%;">
               </slide>
               <slide>
-                <img [src]="_tws.info.imagen3carruselProyecto1" alt="third slide" style="display: block; width: 100%;">
+                <img [src]="proyecto.imagen3carruselProyecto" alt="third slide" style="display: block; width: 100%;">
               </slide>
             </carousel>
         </div>
@@ -40,7 +40,8 @@
 
     <div class="right-column-inner">
       <div class="portfolio-copy">
-        <p>{{ _tws.info.copyLargoProyecto1 }}</p>
+        <p>{{ proyecto.copyLargoProyecto }}</p>
+
       </div>
       <div class="divider"></div>
       <app-footer></app-footer>

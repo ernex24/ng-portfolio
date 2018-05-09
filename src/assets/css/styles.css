@@ -610,6 +610,7 @@ a.hand-gesture-icon {
     right: 0;
     z-index: 100;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .nav-desktop ul {
@@ -1140,6 +1141,10 @@ ul.slick-dots li.slick-active button, ul.slick-dots li button:hover {
 	.nav-inner {
 	  padding: 0px 50px;
 	}
+
+    .nav-inner ul li a {
+        cursor: pointer;
+    }
 
     .nav-desktop{
         display: none;

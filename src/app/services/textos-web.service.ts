@@ -5,12 +5,16 @@ import {Http} from '@angular/http';
 export class TextosWebService {
 info: any = {};
 cargada:boolean = false;
+
   constructor( public http:Http) {
-    this.http.get('../../assets/data/textosWeb.json')
+    this.http.get('https://ng-portafolio.firebaseio.com/ngx-portfolio:.json')
         .subscribe( data => {
-           console.log(data.json());
            this.cargada = true;
            this.info = data.json();
         });
     }
+
+    public cargarProyecto( id: string ) {
+      return this.http.get(`https://ng-portafolio.firebaseio.com/ngx-portfolio:/proyectos/${ id }.json` );
+
 }

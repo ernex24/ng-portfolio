@@ -5,7 +5,7 @@ import {ProjectComponent} from './components/project/project.component';
 
 export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'project', component: ProjectComponent },
+  { path: 'project/:id', component: ProjectComponent },
   { path: '**', redirectTo: '/home', pathMatch: 'full'},
   { path: '', redirectTo: '/home', pathMatch: 'full'}
 ];
